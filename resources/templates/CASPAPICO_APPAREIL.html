@@ -36,7 +36,6 @@
                         </li>
                     </ul>      
                 </nav> 
-
             </header>
             
             <div id="sous_titre_principale">
@@ -63,9 +62,13 @@
                             <button type="button" id="ajout_appareil" onclick="ajout_appareil(this)">Ajouter un appareil</button>
                             
                             <div class="border">
-                                <button class="un_appareil_active" type="button" id="USERNAME_0" onclick="swap_appareil(this)">Shishi</button>
+                                <button class="un_appareil_actif" type="button" id="appareil_accueil" onclick="">Button cachée</button>
                             </div>
 
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_0" onclick="swap_appareil(this)">Shishi</button>
+                            </div>
+                            
                             <div class="border">
                                 <button class="un_appareil" type="button" id="USERNAME_1" onclick="swap_appareil(this)">Toto</button>
                             </div>
@@ -463,55 +466,9 @@
                                 </form>
                             </div>
 
-                            <div class="un_appareil_info_active" id="USERNAME_0_INFO">
+                            <div class="un_appareil_info_actif">
                                 <h3>Accueil d'information</h3>
-                                <p>Nouvelle acceuil</p>
-                            </div>
-
-                            <div class="un_appareil_info_cache" id="USERNAME_0_INFO">
-                                <h3>Device Shishi information</h3>
-                                <table class="un_appareil_info_contenu">
-                                    <tr>
-                                        <td class="tableau_nom_info">Propriétaire :</td>
-                                        <td class="tableau_info" id="tableau_proprietaire" >Shishi team</td>
-                                    </tr> 
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Nom de l'appareil :</td>
-                                        <td class="tableau_info" id="tableau_nom_appareil" >Device Shishi</td>
-                                    </tr> 
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Date de création:</td>
-                                        <td class="tableau_info" id="tableau_date" >09/02</td>
-                                    </tr>  
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Location :</td>
-                                        <td class="tableau_info" id="tableau_location_pays">France,</td>
-                                        <td class="tableau_info" id="tableau_location_ville">Paris</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Status :</td>
-                                        <td class="tableau_info" id="tableau_status">Actif</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Public :</td>
-                                        <td class="tableau_info" id="tableau_public">Oui</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Dernière données :</td>
-                                        <td class="tableau_info" id="tableau_derniere_donnee">09/02/2022</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="tableau_nom_info">Description :</td>
-                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
-                                    </tr>
-                                </table>
+                                <p id="appareil_accueil_info">Nouvelle acceuil</p>
                             </div>
 
                             <div class="un_appareil_info_cache" id="USERNAME_0_INFO">
@@ -598,6 +555,11 @@
                                         <td class="tableau_nom_info">Dernière données :</td>
                                         <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
                                     </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Description :</td>
+                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                    </tr>
                                 </table>
                             </div>
 
@@ -638,6 +600,11 @@
                                     <tr>
                                         <td class="tableau_nom_info">Dernière données :</td>
                                         <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Description :</td>
+                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
                                     </tr>
                                 </table>
                             </div>
