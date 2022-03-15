@@ -27,7 +27,7 @@ header{
 }
 
 #titre_principale{
-    font-size: 150%;
+    font-size: 170%;
 
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ header{
 }
 
 #nav_principale{
-    font-size:140%;
+    font-size:160%;
     margin: 0vh 0vh 5vh 0vh;
     
     display: flex;
@@ -94,7 +94,7 @@ footer{
 }
 
 #sous_titre_principale{
-    font-size: 100%;
+    font-size: 110%;
     background-color: #378dc2;
 
     display: flex;
@@ -146,6 +146,7 @@ footer{
 }
 
 .button_nav_appareils{
+    font-size: 120%;
     cursor: pointer;
     inline-size:100%;
     border: black 3px solid;
@@ -170,6 +171,7 @@ footer{
 }
 
 .corps_object{
+    font-size: 110%;
     height: 600px;
 
     display: flex;
@@ -180,7 +182,6 @@ footer{
 #mes_appareils{
     background-color: #ecb07c;
     border-radius: 20px 5px 0px 0px;
-    
 }
 
 #object_liste_appareils{
@@ -197,7 +198,7 @@ footer{
 }
 
 #mes_appareils_liste{
-    width: 175px;
+    width: 200px;
 
     border-right: 3px black solid;
     overflow-y: scroll;
@@ -207,6 +208,7 @@ footer{
 }
 
 #ajout_appareil{
+    font-size: 100%;
     background-color: whitesmoke;
     width: 100%;
 
@@ -221,7 +223,7 @@ footer{
 
 .form_ajout_appareil{
     width: 70%;
-    margin: 7vh 0vh 0vh 1vh;
+    margin: 0vh 0vh 0vh 1vh;
     display: flex;
     flex-direction: column;
 }
@@ -229,7 +231,7 @@ footer{
 .label_form{
     width: 25%;
     min-width: 200px;
-    padding: 0vh 0vh 0vh 5%;
+    margin: 0vh 0vh 0vh 5%;
 }
 
 .input_form{
@@ -254,11 +256,13 @@ footer{
 
 #boutton_submit{
     width: 15%;
-    margin-left: 45%;
+    margin-left: 50%;
 
     justify-self: center;
+    cursor: pointer;
 }
 .un_appareil{
+    font-size: 120%;
     background-color: #eca57c;
     width: 100%;
     height: 75px;
@@ -267,8 +271,8 @@ footer{
     cursor: pointer;
 }
 
-.un_appareil_active{
-    font-size: large;
+.un_appareil_actif{
+    font-size: 140%;
     font-weight: bold;
     background-color: #dd805c;
     width: 100%;
@@ -288,8 +292,18 @@ footer{
 }
 
 h3{
+    font-size: 140%;
     display: flex;
-    justify-content: center;
+    padding-left: 35%;
+}
+
+#appareil_accueil{
+    display: none;
+}
+
+#appareil_accueil_info{
+    margin: 10vh 5vh 0vh 5vh;
+    border:3px green solid;
 }
 
 .un_appareil_info_cache{
@@ -297,12 +311,20 @@ h3{
 }
 
 .un_appareil_info_contenu{
-    margin: 10vh 0vh 0vh 0vh;
+    margin: 10vh 0vh 0vh 3vh;
 }
 
 .tableau_nom_info{
-    width: 150px;
-    max-width: 150px;
+    font-weight: 600;
+    font-size: 110%;
+    width: 200px;
+    max-width: 200px;
+
+    word-wrap: break-word;
+}
+
+.tableau_info{
+    font-size: 110%;
 
     word-wrap: break-word;
 }
