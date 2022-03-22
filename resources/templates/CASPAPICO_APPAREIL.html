@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>CASPA-PICO</title>
-        <link rel="stylesheet" href="src_css/CASPAPICO.css" />
-        <script src="src_js/CASPAPICO.js" defer></script>  
+        <link rel="stylesheet" href="src_css/CASPA-PICO.css" />
+        <script src="src_js/CASPA-PICO.js" defer></script>  
     </head>
 
     <body>
@@ -50,7 +50,7 @@
 
                 <div class="object">
                     <div class="corps_object" id="object_liste_appareils">
-                        caca
+                        TODO
                     </div>
 
                     <div class="corps_object" id="object_mes_appareils">
@@ -76,6 +76,30 @@
                             <div class="border">
                                 <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
                             </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
                         </div>
 
                         <div id="mes_appareils_info">
@@ -85,15 +109,18 @@
                             
                             <div class="un_appareil_info_cache" id="ajout_appareil_INFO">
                                 <h3>Ajout d'un appareil</h3>
+                                
+                                <p id="required_form">* Champs obligatoires</p>
+
                                 <form class="form_ajout_appareil" method="post" action="TODO">
                                     <div class="ligne_form">
                                         <label class="label_form" for="ajout_nom_appareil">Nom de l'appareil *</label>
-                                        <input class="input_form" type="text" name="ajout_nom_appareil" id="ajout_nom_appareil"placeholder= "Nom de l'appareil" required/>
+                                        <input class="input_form" type="text" name="ajout_nom_appareil" id="ajout_nom_appareil" maxlength="30" placeholder= "Nom de l'appareil" required/>
                                     </div>
 
                                     <div class="ligne_form">
                                         <label class="label_form" for="ajout_num_appareil">Numéro de l'appareil</label>
-                                        <input class="input_form" type="number" name="ajout_num_appareil" min="0" max="999" minlength="6" maxlength="6" id="ajout_num_appareil" maxlength="3" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                        <input class="input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="3" placeholder="Code à 6 chiffre. ex: 123456"/>
                                     </div>
 
                                     <div class="ligne_form">
@@ -102,7 +129,7 @@
                                     </div>
 
                                     <div class="ligne_form">
-                                        <label class="label_form" for="ajout_pays">Location :</label>
+                                        <label class="label_form" for="ajout_pays">Location *</label>
                                         <select class="input_form" name="ajout_pays" id="ajout_pays">
                                             <option value="AF">Afghanistan</option>
                                             <option value="ZA">Afrique du Sud</option>
@@ -348,7 +375,7 @@
                                     </div>
 
                                     <div class="ligne_form">
-                                        <label class="label_form" for="ajout_ville">Ville :</label>
+                                        <label class="label_form" for="ajout_ville">Ville </label>
                                         <select class="input_form" name="ajout_ville" id="ajout_ville">
                                             <option value="none" selected> Non précisé</option>
                                             <option value="bourg">Bour-en-Bresse (01)</option>
@@ -451,12 +478,12 @@
                                     </div>
 
                                     <div class="ligne_form">
-                                        <label class="label_form" for="ajout_public">Public :</label>
+                                        <label class="label_form" for="ajout_public">Public *</label>
                                         <input type="checkbox" name="ajout_public" id="ajout_public" checked/>
                                     </div>
 
                                     <div class="ligne_form">
-                                        <label class="label_form" for="ajout_description">Description :</label>
+                                        <label class="label_form" for="ajout_description">Description </label>
                                         <textarea class="input_form" name="ajout_description" id="ajout_description" placeholder="Facultatif : Ajout d'une petite description"></textarea>
                                     </div>
 
@@ -468,11 +495,12 @@
 
                             <div class="un_appareil_info_actif">
                                 <h3>Accueil d'information</h3>
-                                <p id="appareil_accueil_info">Nouvelle acceuil</p>
+                                <p id="appareil_accueil_info">Nouvelle accueil</p>
                             </div>
 
                             <div class="un_appareil_info_cache" id="USERNAME_0_INFO">
                                 <h3>Device Shishi information</h3>
+
                                 <table class="un_appareil_info_contenu">
                                     <tr>
                                         <td class="tableau_nom_info">Propriétaire :</td>
@@ -491,8 +519,7 @@
 
                                     <tr>
                                         <td class="tableau_nom_info">Location :</td>
-                                        <td class="tableau_info" id="tableau_location_pays">France,</td>
-                                        <td class="tableau_info" id="tableau_location_ville">Paris</td>
+                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
                                     </tr>
 
                                     <tr>
@@ -515,10 +542,35 @@
                                         <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
                                     </tr>
                                 </table>
+
+                                <button type="button" class="rouage" onclick="">
+                                        <img src="images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                        <img src="images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                        <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                </button>
+
+                                <div id="overlay_appareillage" onclick="appareillage_off()">
+                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
+                                        <div class="appareillage_ligne_form">
+                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
+                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                        </div>
+
+                                        <div class="appareillage_ligne_form">
+                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <button type="button" class="appareillage" onclick="appareillage_on()">
+                                    <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                    <p>Appareillage un appareil</p>
+                                </button>
                             </div>
 
                             <div class="un_appareil_info_cache" id="USERNAME_1_INFO">
                                 <h3>Toto lala information</h3>
+
                                 <table class="un_appareil_info_contenu">
                                     <tr>
                                         <td class="tableau_nom_info">Propriétaire :</td>
@@ -537,8 +589,7 @@
 
                                     <tr>
                                         <td class="tableau_nom_info">Location :</td>
-                                        <td class="tableau_info" id="tableau_location_pays">France,</td>
-                                        <td class="tableau_info" id="tableau_location_ville">Paris</td>
+                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
                                     </tr>
 
                                     <tr>
@@ -561,10 +612,36 @@
                                         <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
                                     </tr>
                                 </table>
+
+                                <button type="button" class="rouage" onclick="">
+                                    <!-- TODO -->
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                </button>
+
+                                <div id="overlay_appareillage" onclick="appareillage_off()">
+                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
+                                        <div class="appareillage_ligne_form">
+                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
+                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                        </div>
+
+                                        <div class="appareillage_ligne_form">
+                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <button type="button" class="appareillage" onclick="appareillage_on()">
+                                    <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                    <p>Appareillage un appareil</p>
+                                </button>
                             </div>
 
                             <div class="un_appareil_info_cache" id="USERNAME_2_INFO">
                                 <h3>Kiki information</h3>
+
                                 <table class="un_appareil_info_contenu">
                                     <tr>
                                         <td class="tableau_nom_info">Propriétaire :</td>
@@ -583,8 +660,7 @@
 
                                     <tr>
                                         <td class="tableau_nom_info">Location :</td>
-                                        <td class="tableau_info" id="tableau_location_pays">France,</td>
-                                        <td class="tableau_info" id="tableau_location_ville">Paris</td>
+                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
                                     </tr>
 
                                     <tr>
@@ -607,6 +683,30 @@
                                         <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
                                     </tr>
                                 </table>
+
+                                <button type="button" class="rouage" onclick="">
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                    <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                </button>
+
+                                <div id="overlay_appareillage" onclick="appareillage_off()">
+                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
+                                        <div class="appareillage_ligne_form">
+                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
+                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                        </div>
+
+                                        <div class="appareillage_ligne_form">
+                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <button type="button" class="appareillage" onclick="appareillage_on()">
+                                    <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                    <p>Appareillage un appareil</p>
+                                </button>
                             </div>
                         </div>
                     </div>
