@@ -178,7 +178,7 @@ footer{
 
 .corps_object{
     font-size: 110%;
-    height: 600px;
+    height: 650px;
 
     display: flex;
     border: black 3px solid;
@@ -243,9 +243,10 @@ footer{
 }
 
 #ajout_appareil:hover{
-    transform:scale(0.92);
-    transition-duration: 3s;
+    transform:scale(0.95);
+    border: rgb(255, 65, 65) 3px solid;
     border-radius: 5%;
+    transition-duration: 2s;
 }
 
 .ligne_form{
@@ -301,10 +302,13 @@ footer{
 }
 
 #boutton_submit{
+    font-size: 105%;
+
     width: 15%;
     margin-left: 50%;
 
-    justify-self: center;
+    border-radius: 3px;
+
     cursor: pointer;
 }
 
@@ -343,9 +347,9 @@ footer{
 }
 
 h3{
-    font-size: 140%;
+    font-size: 180%;
     display:flex;
-    padding-left: 35%;
+    padding-left: 33%;
 }
 
 #appareil_accueil{
@@ -388,7 +392,7 @@ h3{
     background-color: #fcefef;
 
     position: absolute;
-    width: 155px;
+    width: 142px;
     height: 150px;
     top: 0px;
     right: 10px;
@@ -401,13 +405,13 @@ h3{
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-.rouage:hover {
+.rouage:hover{
     transform:scale(0.92);
+    border: rgb(255, 65, 65) 3px solid;
     transition-duration: 2s;
 }
 
 .rouage:hover  #logo_rouage1{
-    
     transform: rotate(360deg);
     transition-duration: 2s;
 }
@@ -423,39 +427,42 @@ h3{
 }
 
 #logo_rouage1{
-    width: 80px;
+    width: 70px;
     position: relative;
     top: 50px;
-    right: -10px;
+    right: -2px;
 }
 
 #logo_rouage2{
     width: 50px;
     position: relative;
-    top: -40px;
-    right: 10px;   
+    top: -25px;
+    right: 5px;   
 }
 
 #logo_rouage3{
     width: 30px;
     position: relative;
-    top: -65px;
+    top: -55px;
     right: 10px;
 }
 
 .appareillage{
-    font-size: 15px;
+    background-color: transparent;
+    font-size: 110%;
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
     align-items: center; 
     
-    width: 300px;
+    width: 320px;
 
     margin: 3vh 0vh 0vh 3vh;
     border-bottom: 3px rgb(106, 106, 106) solid;
     border-left: 5px rgb(106, 106, 106) solid;
     border-radius: 0px 0px 0px 15px;
+    border-top: none;
+    border-right: none;
 
     cursor: pointer;
 }
@@ -464,20 +471,28 @@ h3{
     width: 60px;
 }
 
-#overlay_appareillage {
-    background-color: #3939396b;
+.appareillage:hover{
+    transform: scale(1.01);
+    border-bottom: 3px rgb(255, 65, 65)solid;
+    border-left: 5px rgb(255, 65, 65) solid;
+    border-top: none;
+    border-right: none;
+    transition-duration: 2s;
+}
+
+#overlay_appareillage{
+    background-color: #3939396b ;
     width: 100%;
     height: 100%;
 
+
     position: fixed;
     display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    cursor: pointer;
-  }
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
 
 .form_appareillage{
     font-size: 60px;
@@ -489,20 +504,49 @@ h3{
     align-items: center;
     justify-content: center;
 
-    padding: 5vh 5vh 5vh 5vh;
-
     position: absolute;
     top: 50%;
     left: 50%;
+
+    padding: 75px 100px 75px 100px;
     
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    transition-delay: 10s;
 
     border: 5px black solid;
     border-radius: 30px;
 }
 
+.appareillage_close{
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+
+    font-size: 80px;
+    font-weight: bolder;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    border: 5px black solid;
+    border-radius: 100%;
+    transform: rotate(45deg);
+
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    cursor: pointer;
+}
+
+.appareillage_close:hover{
+    transform: scale(0.92) rotate(45deg);
+    border: rgb(255, 65, 65) 5px solid;
+    background-color: #7d7d7dbd;
+    transition-duration: 2s;
+}
+
 .appareillage_ligne_form{
+    font-size: 105%;
     display: flex;
     flex-direction: column;
 
@@ -512,14 +556,39 @@ h3{
 .appareillage_label_form{
     margin: 2vh 0vh 2vh 0vh;
     font-weight: 600;
+
 }
 
 .appareillage_input_form{
     font-size: large;
     height: 30px;
+    
 }
 
 #appareillage_boutton_submit{
     font-size: large;
     width: 200px;
+
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+/* #appareil_corps{
+    display: ;
+} */
+
+#appareil_parametre{
+    display: none;
+    
 }
