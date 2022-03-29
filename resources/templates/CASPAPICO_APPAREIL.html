@@ -500,72 +500,65 @@
 
                             <div class="un_appareil_info_cache" id="USERNAME_0_INFO">
                                 <h3>Device Shishi information</h3>
+                                
+                                <div id="appareil_corps">
+                                    <table class="un_appareil_info_contenu">
+                                        <tr>
+                                            <td class="tableau_nom_info">Propriétaire :</td>
+                                            <td class="tableau_info" id="tableau_proprietaire" >Shishi team</td>
+                                        </tr> 
 
-                                <table class="un_appareil_info_contenu">
-                                    <tr>
-                                        <td class="tableau_nom_info">Propriétaire :</td>
-                                        <td class="tableau_info" id="tableau_proprietaire" >Shishi team</td>
-                                    </tr> 
+                                        <tr>
+                                            <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                            <td class="tableau_info" id="tableau_nom_appareil" >Device Shishi</td>
+                                        </tr> 
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Nom de l'appareil :</td>
-                                        <td class="tableau_info" id="tableau_nom_appareil" >Device Shishi</td>
-                                    </tr> 
+                                        <tr>
+                                            <td class="tableau_nom_info">Date de création:</td>
+                                            <td class="tableau_info" id="tableau_date" >09/02</td>
+                                        </tr>  
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Date de création:</td>
-                                        <td class="tableau_info" id="tableau_date" >09/02</td>
-                                    </tr>  
+                                        <tr>
+                                            <td class="tableau_nom_info">Location :</td>
+                                            <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Location :</td>
-                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
-                                    </tr>
+                                        <tr>
+                                            <td class="tableau_nom_info">Status :</td>
+                                            <td class="tableau_info" id="tableau_status">Actif</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Status :</td>
-                                        <td class="tableau_info" id="tableau_status">Actif</td>
-                                    </tr>
+                                        <tr>
+                                            <td class="tableau_nom_info">Public :</td>
+                                            <td class="tableau_info" id="tableau_public">Oui</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Public :</td>
-                                        <td class="tableau_info" id="tableau_public">Oui</td>
-                                    </tr>
+                                        <tr>
+                                            <td class="tableau_nom_info">Dernière données :</td>
+                                            <td class="tableau_info" id="tableau_derniere_donnee">09/02/2022</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Dernière données :</td>
-                                        <td class="tableau_info" id="tableau_derniere_donnee">09/02/2022</td>
-                                    </tr>
+                                        <tr>
+                                            <td class="tableau_nom_info">Description :</td>
+                                            <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                        </tr>
+                                    </table>
 
-                                    <tr>
-                                        <td class="tableau_nom_info">Description :</td>
-                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
-                                    </tr>
-                                </table>
-
-                                <button type="button" class="rouage" onclick="">
+                                    <button type="button" class="rouage" onclick="">
                                         <img src="images/rouage.png" alt="parametre" id="logo_rouage1"/>
                                         <img src="images/rouage.png" alt="parametre" id="logo_rouage2"/>
                                         <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
-                                </button>
+                                    </button>
 
-                                <div id="overlay_appareillage" onclick="appareillage_off()">
-                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
-                                        <div class="appareillage_ligne_form">
-                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
-                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
-                                        </div>
-
-                                        <div class="appareillage_ligne_form">
-                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
-                                        </div>
-                                    </form>
+                                    <button type="button" class="appareillage" onclick="appareillage_on()">
+                                        <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                        <p id="ID_appareil">Appareiller un appareil</p>
+                                        <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
+                                    </button>
                                 </div>
 
-                                <button type="button" class="appareillage" onclick="appareillage_on()">
-                                    <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
-                                    <p>Appareillage un appareil</p>
-                                </button>
+                                <div id="appareil_parametre">
+                                </div>
                             </div>
 
                             <div class="un_appareil_info_cache" id="USERNAME_1_INFO">
@@ -620,22 +613,10 @@
                                     <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
                                 </button>
 
-                                <div id="overlay_appareillage" onclick="appareillage_off()">
-                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
-                                        <div class="appareillage_ligne_form">
-                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
-                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
-                                        </div>
-
-                                        <div class="appareillage_ligne_form">
-                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
-                                        </div>
-                                    </form>
-                                </div>
-
                                 <button type="button" class="appareillage" onclick="appareillage_on()">
                                     <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
-                                    <p>Appareillage un appareil</p>
+                                    <p id="ID_appareil">Appareiller un appareil</p>
+                                    <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
                                 </button>
                             </div>
 
@@ -690,27 +671,31 @@
                                     <img src="images/rouage.png" alt="parametre" id="logo_rouage3"/>
                                 </button>
 
-                                <div id="overlay_appareillage" onclick="appareillage_off()">
-                                    <form class="form_appareillage" method="post" action="TODO_appareillage">
-                                        <div class="appareillage_ligne_form">
-                                            <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
-                                            <input class="appareillage_input_form" type="number" name="ajout_num_appareil" min="0" max="999" maxlength="6" id="ajout_num_appareil" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
-                                        </div>
-
-                                        <div class="appareillage_ligne_form">
-                                            <input id="appareillage_boutton_submit" type="submit" value="Valider" />
-                                        </div>
-                                    </form>
-                                </div>
-
                                 <button type="button" class="appareillage" onclick="appareillage_on()">
                                     <img src="images/appareillage.png" alt="appareillage" id="logo_appareillage">
-                                    <p>Appareillage un appareil</p>
+                                    <p id="ID_appareil">Appareiller un appareil</p>
+                                    <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
                                 </button>
                             </div>
                         </div>
+
+                        <div id="overlay_appareillage">
+                            <form class="form_appareillage" method="post" action="TODO_appareillage">
+                                <button type="button" class="appareillage_close" onclick="appareillage_off()">
+                                    +
+                                </button>
+
+                                <div class="appareillage_ligne_form">
+                                    <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
+                                    <input class="appareillage_input_form" type="number" name="ajout_num_appareil" id="ajout_num_appareil" minlength="6" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                </div>
+
+                                <div class="appareillage_ligne_form">
+                                    <input id="appareillage_boutton_submit" type="submit" value="Valider" onclick="appareillage_off()"/>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
 
