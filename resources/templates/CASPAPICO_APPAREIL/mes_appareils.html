@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CASPA-PICO</title>
+        <link rel="stylesheet" href="../src_css/CASPA-PICO.css" />
+        <script src="../src_js/CASPA-PICO.js" defer></script>  
+    </head>
+
+    <body>
+        <div id="page">
+            <header>
+                <div id="titre_principale">
+                    
+                    <a class="link" href="../CASPAPICO_ACCUEIL.html"><img src="../images/LOGO_CASPAPICO.png" alt="Logo" id="logo_principale"/></a>
+                    <a class="link" href="../CASPAPICO_ACCUEIL.html" id="CASPAPICO">CASPA-PICO</a>
+                    
+                </div>
+
+                <nav>
+                    <ul id="nav_principale">
+                        <li>
+                            <a class="nav_link" href="../CASPAPICO_ACCUEIL.html">Accueil</a>
+                        </li>
+                        
+                        <li>
+                            <a class="nav_link" href="mes_appareils.html" id="page_courante">Appareils</a>
+                        </li>
+
+                        <li>
+                            <a class="nav_link" href="../CASPAPICO_DONNEES.html">Données</a>
+                    	</li>
+
+                        <li>
+                            <a class="nav_link" href="../CASPAPICO_APROPOS.html">A propos</a>
+                        </li>
+                    </ul>      
+                </nav> 
+            </header>
+            
+            <div id="sous_titre_principale">
+                <a class="fonction" href="">Ptit Message</a>
+            </div>
+
+            <div id="corps">
+                <div id="select">
+                    <a class="button_nav_appareils" id="liste_appareils" href="liste_appareils.html">Liste des appareils</a>
+                    <a class="button_nav_appareils" id="mes_appareils" href="mes_appareils.html">Mes appareils</a>
+                </div>     
+
+                <div class="object">
+
+                    <div class="corps_object" id="object_mes_appareils">
+                        <div id="mes_appareils_liste">
+                            <!-- Correspond à la liste de mes appareils. A ajouter les appareils ici -->
+                            <!-- id d'un appareil = "<USERNAME>_<ID>". id de l'information de l'appreil "<USERNAME>_<ID>_INFO" -->
+                            <!-- <button class="un_appareil" type="button" id=<USERNAME>_<ID> onclick=swap_appareil(this)"> <NOM_APPAREIL> </button> -->
+                            
+                            <a id="ajout_appareil" href="ajout_appareil.html">Ajouter un appareil</a>
+                            
+                            <div class="border">
+                                <button class="un_appareil_actif" type="button" id="appareil_accueil" onclick="">Button cachée</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_0" onclick="swap_appareil(this)">Shishi</button>
+                            </div>
+                            
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_1" onclick="swap_appareil(this)">Toto</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+
+                            <div class="border">
+                                <button class="un_appareil" type="button" id="USERNAME_2" onclick="swap_appareil(this)">Kiki</button>
+                            </div>
+                        </div>
+
+                        <div id="mes_appareils_info">
+                            <!-- Correspond au information de l'appareil selectionner. A update les informations des apparareils ici -->   
+                            <!-- id d'un appareil = "<USERNAME>_<ID>". id de l'information de l'appreil "<USERNAME>_<ID>_info" -->
+                            <!-- <button class="un_appareil" type="button" id=<USERNAME>_<ID> onclick=""> <NOM_APPAREIL> </button> -->
+
+                            <div class="un_appareil_info_actif">
+                                <h3>Accueil d'information</h3>
+                                <p id="appareil_accueil_info">Nouvelle accueil</p>
+                            </div>
+
+                            <div class="un_appareil_info_cache" id="USERNAME_0_INFO">
+                                <h3>Device Shishi information</h3>
+                                
+                                <div class="appareil_corps" id="USERNAME_0_corps">
+                                    <table class="un_appareil_info_contenu">
+                                        <tr>
+                                            <td class="tableau_nom_info">Propriétaire :</td>
+                                            <td class="tableau_info">Shishi team</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                            <td class="tableau_info">Device Shishi</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Date de création:</td>
+                                            <td class="tableau_info">09/02</td>
+                                        </tr>  
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Location :</td>
+                                            <td class="tableau_info">France, Paris</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Status :</td>
+                                            <td class="tableau_info">Actif</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Public :</td>
+                                            <td class="tableau_info">Oui</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Dernière données :</td>
+                                            <td class="tableau_info" id="tableau_derniere_donnee">09/02/2022</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Description :</td>
+                                            <td class="tableau_info" id="tableau_derniere_description">Je suis la description d'un appareil très minion. Je sers à informer les gens par une description créé par l'utilisateur tout minion. Pour information, je ne suis pas un minion mais bien une description. Voici des mots au hasard: bleu, chaise, boîte, EPS-32, toilette, manger, hippopotame</td>
+                                        </tr>
+                                    </table>
+
+                                    <a class="rouage" href="parametre.html">
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                    </a>
+
+                                    <button type="button" class="appareillage" onclick="appareillage_on()">
+                                        <img src="../images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                        <p id="ID_appareil">Appareiller un appareil</p>
+                                        <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="un_appareil_info_cache" id="USERNAME_1_INFO">
+                                <h3>Toto information</h3>
+
+                                <div class="appareil_corps" id="USERNAME_1_corps">
+                                    <table class="un_appareil_info_contenu">
+                                        <tr>
+                                            <td class="tableau_nom_info">Propriétaire :</td>
+                                            <td class="tableau_info" id="tableau_proprietaire" >Toto team</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                            <td class="tableau_info" id="tableau_nom_appareil" >Toto</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Date de création:</td>
+                                            <td class="tableau_info" id="tableau_date" >15/02</td>
+                                        </tr>  
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Location :</td>
+                                            <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Status :</td>
+                                            <td class="tableau_info" id="tableau_status">Actif</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Public :</td>
+                                            <td class="tableau_info" id="tableau_public">Oui</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Dernière données :</td>
+                                            <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Description :</td>
+                                            <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                        </tr>
+                                    </table>
+
+                                    <a class="rouage" href="parametre.html">
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                    </a>
+
+                                    <button type="button" class="appareillage" onclick="appareillage_on()">
+                                        <img src="../images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                        <p id="ID_appareil">Appareiller un appareil</p>
+                                        <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="un_appareil_info_cache" id="USERNAME_2_INFO">
+                                <h3>Kiki information</h3>
+
+                                <div class="appareil_corps" id="USERNAME_2_corps">
+                                    <table class="un_appareil_info_contenu">
+                                        <tr>
+                                            <td class="tableau_nom_info">Propriétaire :</td>
+                                            <td class="tableau_info" id="tableau_proprietaire" >Kiki team</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                            <td class="tableau_info" id="tableau_nom_appareil" >Kiki</td>
+                                        </tr> 
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Date de création:</td>
+                                            <td class="tableau_info" id="tableau_date" >15/02</td>
+                                        </tr>  
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Location :</td>
+                                            <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Status :</td>
+                                            <td class="tableau_info" id="tableau_status">Actif</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Public :</td>
+                                            <td class="tableau_info" id="tableau_public">Oui</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Dernière données :</td>
+                                            <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tableau_nom_info">Description :</td>
+                                            <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                        </tr>
+                                    </table>
+
+                                    <a class="rouage" href="parametre.html">
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage1"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage2"/>
+                                        <img src="../images/rouage.png" alt="parametre" id="logo_rouage3"/>
+                                    </a>
+
+                                    <button type="button" class="appareillage" onclick="appareillage_on()">
+                                        <img src="../images/appareillage.png" alt="appareillage" id="logo_appareillage">
+                                        <p id="ID_appareil">Appareiller un appareil</p>
+                                        <!-- TODO changer le nom pour l'ID/nom de l'appareil -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="overlay_appareillage">
+                            <form class="form_appareillage" method="post" action="TODO_appareillage">
+                                <button type="button" class="appareillage_close" onclick="appareillage_off()">
+                                    +
+                                </button>
+
+                                <div class="appareillage_ligne_form">
+                                    <label class="appareillage_label_form" for="ajout_num_appareil">Code d'activation</label>
+                                    <input class="appareillage_input_form" type="number" name="ajout_num_appareil" id="ajout_num_appareil" minlength="6" maxlength="6" placeholder="Code à 6 chiffre. ex: 123456"/>
+                                </div>
+
+                                <div class="appareillage_ligne_form">
+                                    <input id="appareillage_boutton_submit" type="submit" value="Valider" onclick="appareillage_off()"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <figure id="logo_supervisor">
+                    <img src="../images/LOGO_SU.png" alt="LOGO_SU" id="LOGO_SU"/>
+                    <img src="../images/LOGO_INSU.png" alt="LOGO_INSU" id="LOGO_INSU"/>
+                    <img src="../images/LOGO_LATMOS.png" alt="LOGO_LATMOS" id="LOGO_LATMOS"/>
+                    <img src="../images/LOGO_PARTICITAE.png" alt="LOGO_PARTICITAE" id="LOGO_PARTICITAE"/>
+                </figure>
+            </footer>
+        </div>
+    </body>
+    
+</html>
