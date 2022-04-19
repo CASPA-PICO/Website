@@ -25,3 +25,14 @@ function back(){
     window.history.back();
 }
 
+function open_recherche(){
+    document.getElementById("form_barre_recherche").style.minHeight = "250px";
+    document.getElementById("open_barre_overlay").style.height = "0px";
+    document.getElementById("form_barre_recherche").style.borderTop = "3px black solid";
+  }
+  
+  function close_recherche(){
+    document.getElementById("form_barre_recherche").style.minHeight = "0px";
+    document.getElementById("open_barre_overlay").style.height = "40px";
+    document.getElementById("form_barre_recherche").style.borderTop = "none";
+  }
