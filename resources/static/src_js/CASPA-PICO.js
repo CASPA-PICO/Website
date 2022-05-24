@@ -13,6 +13,14 @@ function swap_appareil(self){
     document.getElementById(self.id).className = "un_appareil_actif";
 }
 
+function swap_appareil_fav(self){
+    document.getElementsByClassName("un_appareil_info_fav_actif")[0].className = "un_appareil_info_fav_cache";
+    document.getElementsByClassName("un_appareil_fav_actif")[0].className = "un_appareil_fav";
+
+    document.getElementById(self.id + "_INFO").className = "un_appareil_info_fav_actif";
+    document.getElementById(self.id).className = "un_appareil_fav_actif";
+}
+
 function appareillage_off(){
     document.getElementById("overlay_appareillage").style.display = "none";
 }
