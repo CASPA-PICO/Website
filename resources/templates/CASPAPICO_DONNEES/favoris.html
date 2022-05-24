@@ -39,7 +39,7 @@
         </header>
         
         <div id="sous_titre_principale">
-            <a class="fonction" href="">Visualisée les données de vos appareils favories et de votre historique ou de l'ensemble de la base de donnée ici même !</a>
+            <a class="fonction" href="">Visualisez les données de vos appareils favoris et de votre historique ou de l'ensemble de la base de données ici-même !</a>
         </div>
         
         <div id="corps">
@@ -51,7 +51,189 @@
 
             <div class="object">
                 <div class="corps_object_favoris">
+                    <div id="mes_appareils_liste">
+                        <!-- Correspond à la liste de mes appareils. A ajouter les appareils ici -->
+                        <!-- id d'un appareil = "<USERNAME>_<ID>". id de l'information de l'appreil "<USERNAME>_<ID>_INFO" -->
+                        <!-- <button class="un_appareil" type="button" id=<USERNAME>_<ID> onclick=swap_appareil(this)"> <NOM_APPAREIL> </button> -->
+                        
+                        <div class="border">
+                            <button class="un_appareil_fav_actif" type="button" id="appareil_accueil" onclick="">Button cachée</button>
+                        </div>
 
+                        <div class="border">
+                            <button class="un_appareil_fav" type="button" id="USERNAME_0" onclick="swap_appareil_fav(this)">Shishi</button>
+                        </div>
+                        
+                        <div class="border">
+                            <button class="un_appareil_fav" type="button" id="USERNAME_1" onclick="swap_appareil_fav(this)">Toto</button>
+                        </div>
+
+                        <div class="border">
+                            <button class="un_appareil_fav" type="button" id="USERNAME_2" onclick="swap_appareil_fav(this)">Kiki</button>
+                        </div>
+                    </div>
+
+                    <div id="mes_appareils_info">
+                        <!-- Correspond au information de l'appareil selectionner. A update les informations des apparareils ici -->   
+                        <!-- id d'un appareil = "<USERNAME>_<ID>". id de l'information de l'appreil "<USERNAME>_<ID>_info" -->
+                        <!-- <button class="un_appareil" type="button" id=<USERNAME>_<ID> onclick=""> <NOM_APPAREIL> </button> -->
+
+                        <div class="un_appareil_info_fav_actif">
+                            <h3>Historique de recherche</h3>
+                            <p id="appareil_accueil_info">
+                                Bienvenue dans la section favoris.
+                                <br>
+                                Vous pouvez ajouter des appareils autres que les votres dans vos favoris pour les suivres sur cette page.
+                                <br>
+                                Pour ajouter un appareil, il suffit de se rendre sur la page "Appareils" puis cliquer sur l'onglet "Liste des appareils" et enfin chercher un appareil que l'on souhaite suivre et cliquer sur
+                                
+                            </p>
+                        </div>
+
+                        <div class="un_appareil_info_fav_cache" id="USERNAME_0_INFO">
+                            <h3>Device Shishi information</h3>
+                            
+                            <div class="appareil_corps" id="USERNAME_0_corps">
+                                <table class="un_appareil_info_contenu">
+                                    <tr>
+                                        <td class="tableau_nom_info">Propriétaire :</td>
+                                        <td class="tableau_info">Shishi team</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                        <td class="tableau_info">Device Shishi</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Date de création:</td>
+                                        <td class="tableau_info">09/02</td>
+                                    </tr>  
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Location :</td>
+                                        <td class="tableau_info">France, Paris</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Statut :</td>
+                                        <td class="tableau_info">Actif</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Public :</td>
+                                        <td class="tableau_info">Oui</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Dernière données :</td>
+                                        <td class="tableau_info" id="tableau_derniere_donnee">09/02/2022</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Description :</td>
+                                        <td class="tableau_info" id="tableau_derniere_description">Je suis la description d'un appareil très minion. Je sers à informer les gens par une description créé par l'utilisateur tout minion. Pour information, je ne suis pas un minion mais bien une description. Voici des mots au hasard: bleu, chaise, boîte, EPS-32, toilette, manger, hippopotame</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="un_appareil_info_fav_cache" id="USERNAME_1_INFO">
+                            <h3>Toto information</h3>
+
+                            <div class="appareil_corps" id="USERNAME_1_corps">
+                                <table class="un_appareil_info_contenu">
+                                    <tr>
+                                        <td class="tableau_nom_info">Propriétaire :</td>
+                                        <td class="tableau_info" id="tableau_proprietaire" >Toto team</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                        <td class="tableau_info" id="tableau_nom_appareil" >Toto</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Date de création:</td>
+                                        <td class="tableau_info" id="tableau_date" >15/02</td>
+                                    </tr>  
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Location :</td>
+                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Statut :</td>
+                                        <td class="tableau_info" id="tableau_statut">Actif</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Public :</td>
+                                        <td class="tableau_info" id="tableau_public">Oui</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Dernière données :</td>
+                                        <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Description :</td>
+                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="un_appareil_info_fav_cache" id="USERNAME_2_INFO">
+                            <h3>Kiki information</h3>
+
+                            <div class="appareil_corps" id="USERNAME_2_corps">
+                                <table class="un_appareil_info_contenu">
+                                    <tr>
+                                        <td class="tableau_nom_info">Propriétaire :</td>
+                                        <td class="tableau_info" id="tableau_proprietaire" >Kiki team</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Nom de l'appareil :</td>
+                                        <td class="tableau_info" id="tableau_nom_appareil" >Kiki</td>
+                                    </tr> 
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Date de création:</td>
+                                        <td class="tableau_info" id="tableau_date" >15/02</td>
+                                    </tr>  
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Location :</td>
+                                        <td class="tableau_info" id="tableau_location_pays">France, Paris</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Statut :</td>
+                                        <td class="tableau_info" id="tableau_statut">Actif</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Public :</td>
+                                        <td class="tableau_info" id="tableau_public">Oui</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Dernière données :</td>
+                                        <td class="tableau_info" id="tableau_derniere_donnee">15/02/2022</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tableau_nom_info">Description :</td>
+                                        <td class="tableau_info" id="tableau_derniere_description">Je suis l'info</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

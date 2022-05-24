@@ -2,9 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport">
         <title>CASPA-PICO</title>
         <link rel="stylesheet" href="src_css/CASPA-PICO.css" />
         <script src="src_js/CASPA-PICO.js" defer></script>  
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </head>
 
     <body>
@@ -27,7 +29,7 @@
                     </li>
 
                     <li>
-                        <a class="link" href="CASPAPICO_DONNEES.html">Données</a>
+                        <a class="link" href="CASPAPICO_DONNEES/historique.html">Données</a>
                     </li>
 
                     <li>
@@ -43,7 +45,116 @@
         </div>
         
         <div id="corps">
+            <div class="corps_apropos">
+                <div class="apropos_section">
+                    <h4>Équipe de developpement du dock</h4>
 
+                    <span class="apropos_msg">
+                        Nous sommes une fraîche équipe de 5 étudiants de Polytech Sorbonne université, spécialisés en électronique et informatique
+                        sur cible système embarqué et nous sommes fiers de vous présenter notre projet industriel développé durant notre quatrième année. 
+                    </span>                   
+
+                    <div class="section_carte">
+                        <a class="apropos_carte" href="https://www.linkedin.com/in/pierre-louis-lagunegrand-1660a1195/" target="_blank">
+                            <div class="apropos_carte_image_emplacement">
+                                <img class="apropos_carte_image" src="images/Acteurs/Pierre-Louis.jpg" alt="carte_appareil_image">
+                            </div>
+
+                            <div class="apropos_carte_nom">
+                                <h8>
+                                    LAGUNEGRAND Pierre-Louis
+                                </h8>
+                            </div>
+                            
+                            <img class="apropos_carte_info" src="images/linkedin.png" alt="">
+                            
+                        </a>
+
+                        <a class="apropos_carte" href="https://www.linkedin.com/in/thomas-roussarie/" target="_blank">
+                            <div class="apropos_carte_image_emplacement">
+                                <img class="apropos_carte_image" src="images/Acteurs/Thomas.png" alt="carte_appareil_image">
+                            </div>
+
+                            <div class="apropos_carte_nom">
+                                <h8>
+                                    ROUSSARIE Thomas
+                                </h8>
+                            </div>
+
+                            <img class="apropos_carte_info" src="images/linkedin.png" alt="">
+                        </a>
+
+                        <a class="apropos_carte" href="https://www.linkedin.com/in/nicolas-stein-pro/" target="_blank">
+                            <div class="apropos_carte_image_emplacement">
+                                <img class="apropos_carte_image" src="images/Acteurs/Nicolas.png" alt="carte_appareil_image">
+                            </div>
+
+                            <div class="apropos_carte_nom">
+                                <h8>
+                                    STEIN Nicolas
+                                </h8>
+                            </div>
+
+                            <img class="apropos_carte_info" src="images/linkedin.png" alt="">
+                        </a>
+
+                        <a class="apropos_carte" href="https://www.linkedin.com/in/thanh-liem-ta/" target="_blank">
+                            <div class="apropos_carte_image_emplacement">
+                                <img class="apropos_carte_image" src="images/Acteurs/Thanh-Liem.jpg" alt="carte_appareil_image">
+                            </div>
+
+                            <div class="apropos_carte_nom">
+                                <h8>
+                                    TA Thanh-Liem
+                                </h8>
+                            </div>
+
+                            <img class="apropos_carte_info" src="images/linkedin.png" alt="">
+                        </a>
+
+                        <a class="apropos_carte" href="https://www.linkedin.com/in/yalaoui-amel-60a7291ab/" target="_blank">
+                            <div class="apropos_carte_image_emplacement">
+                                <img class="apropos_carte_image" src="images/Acteurs/Amel.png" alt="carte_appareil_image">
+                            </div>
+
+                            <div class="apropos_carte_nom">
+                                <h8>
+                                    YALAOUI Amel
+                                </h8>
+                            </div>
+
+                            <img class="apropos_carte_info" src="images/linkedin.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="apropos_section">
+                    <h4>Coopérations</h4>
+
+                    <span class="apropos_msg">Nous voulions grandement remercier Nadir Amarouche, Hervé Barrois, Matthieu Freichey et Burak Duru  
+                        de la division technique de l’INSU, Sébastien Payan de la responsabilité scientifique du LATMOS ainsi que
+                        Nicolas Pascal, Sébastien Huart et Loredana Focsa du groupe AERIS/ICARE.
+                    </span>
+
+                    <span class="apropos_msg">Nous voulions également remercier Roselyne Chotin, Cathy Morot et Yann Douze nos professeurs encadrants.
+                        
+                    </span>
+                </div>
+
+                <div class="apropos_section">
+                    <h4>Documentation et téléchargements</h4>
+
+                    <span class="apropos_msg"> Vous pourrez retrouver dans cette section toute la documentation, nos codes et nos réalisations :)</span>
+                    <div class="modele_3D">
+                        <model-viewer poster="images/LOGO_CASPAPICO.png" src="images/Base.gltf" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="0.25rad"></model-viewer>
+                        <a class="lien_github" href="https://github.com/CASPA-PICO" target="_blank">
+                            <span>Retrouver nos codes et nos réalisations sur GitHub ! :)</span>
+                            <img class="logo_github" src="images/GitHub.png" alt="GitHub logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
